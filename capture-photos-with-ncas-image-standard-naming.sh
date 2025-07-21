@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Output directory
-BASE_DIR="/data/amof-cam-1"
+BASE_DIR="/data/amof-cam-11"
 
 #---Define some variables to ensure the filename complies with the AMOF image standard. 
 CAM_NAME="ncas-cam-11"
@@ -27,8 +27,8 @@ while true; do
     # Capture image
     
     gphoto2 --capture-image-and-download --filename "$IMAGE_FILE"
-    chown -R root:lecjlg /data/amof-cam-1
-    chmod -R g+wr /data/amof-cam-1
+    chown -R root:lecjlg /data/amof-cam-11
+    chmod -R g+wr /data/amof-cam-11
 
     echo "Captured: $IMAGE_FILE"
 
